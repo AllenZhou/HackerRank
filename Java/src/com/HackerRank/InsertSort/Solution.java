@@ -23,6 +23,20 @@ public class Solution {
 		printArray(ar);
 	}   
 
+	static void insertionSort2(int[] ar) {
+		for (int i = 1; i < ar.length; i++) {
+			int temp = ar[i];
+			int j = i;
+			while ((j > 0) && (ar[j - 1] > temp)) {
+				ar[j] = ar[j - 1];
+				--j;
+			}
+			ar[j] = temp;
+			printArray(ar);
+		}
+
+	}
+
 /* Tail starts here */
  
  static void printArray(int[] ar) {

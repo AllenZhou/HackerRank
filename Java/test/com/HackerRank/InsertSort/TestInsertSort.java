@@ -35,4 +35,24 @@ public class TestInsertSort extends TestCase {
 			assertEquals(inPutData[i],except[i]);
 		}
 	}
+	
+	@Test
+	public void test3(){
+		int[] inPutData = {1,4, 3, 5, 6, 2};
+		Solution.insertionSort2(inPutData);
+		int[] except={1,2,3,4,5,6};
+		for(int i=0; i<(inPutData.length)-1; i++){
+			assertEquals(inPutData[i],except[i]);
+		}
+	}
+	
+	@Test
+	public void test4(){
+		int[] inPutData = {2,8, 7, 3, 5, 1};
+		Solution.insertionSort2(inPutData);
+		int[] except={1,2,3,5,7,8};
+		for(int i=0; i<(inPutData.length)-1; i++){
+			assertEquals(inPutData[i],except[i]);
+		}
+	}
 }
