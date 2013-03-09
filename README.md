@@ -1,4 +1,4 @@
 HackerRank
 ==========
 
-code for HackerRank
+Code for HackerRank
